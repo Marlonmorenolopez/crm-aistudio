@@ -1,0 +1,4 @@
+export const BRAND_LOGO_URL = 'https://gumubebjnhqtxykkvuqw.supabase.co/storage/v1/object/sign/IMAGENES%20Y%20VIDEOS/CMR_MARLON_MORENO-removebg-preview.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kZWRkZTUyYS02NTc2LTRjNjktOWJkZi0yMWRhNmNlMjAwZDQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJJTUFHRU5FUyBZIFZJREVPUy9DTVJfTUFSTE9OX01PUkVOTy1yZW1vdmViZy1wcmV2aWV3LnBuZyIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODYwNjA1ODEsImV4cCI6MTc4NjY2NTM4MX0.7OLyPluiT_H3Xcua5oftwqNz6oXd2dci_SGRknSGUz8';
+
+export const BRAND_NAME = 'CMR MARLON MORENO';
+export const BRAND_SUBTITLE = 'Inventario & Punto de Venta';

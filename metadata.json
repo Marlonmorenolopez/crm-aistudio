@@ -1,0 +1,6 @@
+{
+  "name": "Sistema de Inventario y Punto de Venta",
+  "description": "Sistema completo de gestión de inventarios, productos, clientes, entradas, salidas y punto de venta con facturación y tickets imprimibles alimentado por InstantDB.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
