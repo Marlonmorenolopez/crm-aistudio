@@ -207,14 +207,19 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       }
 
       const usersList: AppUser[] = (data?.usuariosApp as any) || [];
-      const exists = usersList.some(
-        (u) =>
-          (u.nombreUsuario && u.nombreUsuario.toLowerCase() === username.toLowerCase()) ||
-          (u.email && u.email.toLowerCase() === email.toLowerCase())
+      const usernameExists = usersList.some(
+        (u) => u.nombreUsuario && u.nombreUsuario.toLowerCase() === username.toLowerCase()
+      );
+      const emailExists = usersList.some(
+        (u) => u.email && u.email.toLowerCase() === email.toLowerCase()
       );
 
-      if (exists) {
-        return { success: false, message: 'El nombre de usuario o correo ya está registrado.' };
+      if (usernameExists) {
+        return { success: false, message: 'El nombre de usuario ya está registrado.' };
+      }
+
+      if (emailExists) {
+        return { success: false, message: 'El correo electrónico ya está registrado.' };
       }
 
       const newUserId = id();
